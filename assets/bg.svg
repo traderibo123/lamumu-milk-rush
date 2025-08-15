@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 270">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#bfe6ff"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#8bd17a"/>
+      <stop offset="1" stop-color="#4ea24a"/>
+    </linearGradient>
+  </defs>
+  <rect width="450" height="270" fill="url(#sky)"/>
+  <!-- clouds -->
+  <g opacity=".8" fill="#fff">
+    <ellipse cx="70" cy="50" rx="26" ry="12"/>
+    <ellipse cx="95" cy="50" rx="18" ry="10"/>
+    <ellipse cx="120" cy="52" rx="22" ry="11"/>
+    <ellipse cx="330" cy="40" rx="24" ry="12"/>
+    <ellipse cx="352" cy="42" rx="18" ry="10"/>
+    <ellipse cx="372" cy="40" rx="14" ry="8"/>
+  </g>
+  <!-- distant hills -->
+  <path d="M0 150 Q 90 110 180 150 T 360 150 T 540 150 V 270 H 0 Z" fill="#7ab36a"/>
+  <!-- field -->
+  <rect x="0" y="150" width="450" height="120" fill="url(#field)"/>
+  <!-- barn -->
+  <g transform="translate(300,138)">
+    <rect x="-34" y="-30" width="68" height="62" rx="3" fill="#b4231f" stroke="#7f1614" stroke-width="2"/>
+    <polygon points="-34,-30 0,-60 34,-30" fill="#d82b27" stroke="#7f1614" stroke-width="2"/>
+    <rect x="-14" y="4" width="28" height="28" fill="#5c1a17" stroke="#2d0c0b"/>
+    <rect x="-10" y="8" width="20" height="20" fill="#7a2a26"/>
+    <rect x="-24" y="-6" width="14" height="14" fill="#f2f7ff" stroke="#9db2d7"/>
+    <rect x="10" y="-6" width="14" height="14" fill="#f2f7ff" stroke="#9db2d7"/>
+  </g>
+  <!-- fence -->
+  <g transform="translate(0,180)" stroke="#e4d6b4" stroke-width="3" fill="#f2e3bf">
+    <rect x="0" y="14" width="450" height="6"/>
+    <rect x="0" y="0" width="450" height="6"/>
+    <!-- posts -->
+    <g>
+      <rect x="10" y="-8" width="6" height="42"/>
+      <rect x="60" y="-8" width="6" height="42"/>
+      <rect x="110" y="-8" width="6" height="42"/>
+      <rect x="160" y="-8" width="6" height="42"/>
+      <rect x="210" y="-8" width="6" height="42"/>
+      <rect x="260" y="-8" width="6" height="42"/>
+      <rect x="310" y="-8" width="6" height="42"/>
+      <rect x="360" y="-8" width="6" height="42"/>
+      <rect x="410" y="-8" width="6" height="42"/>
+    </g>
+  </g>
+  <!-- hay bales -->
+  <g>
+    <rect x="60" y="200" width="44" height="24" rx="6" fill="#f8d34a" stroke="#caa52a"/>
+    <rect x="104" y="200" width="44" height="24" rx="6" fill="#f8d34a" stroke="#caa52a"/>
+    <path d="M60 212h44M104 212h44" stroke="#cfa93a" stroke-width="2"/>
+  </g>
+</svg>
