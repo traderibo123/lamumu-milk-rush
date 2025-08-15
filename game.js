@@ -91,7 +91,7 @@
   function drawSprite(n,x,y,w,h){ const img=sprites[n]; if(img&&img.complete) ctx.drawImage(img,x,y,w,h); else { ctx.fillStyle='#222'; ctx.fillRect(x,y,w,h);} }
   function flash(t){ el.state.textContent=t; setTimeout(()=>{ if(!st.paused) el.state.textContent='—'; },1000); }
   function updateShare(){
-  const scoreMsg = `I scored ${st.score} points in Lamumu Milk Rush! 🐄🥛 @traderibo123 #Lamumu #MilkRush`;
+  const scoreMsg = `I scored ${st.score} points in Lamumu Milk Rush! 🐄🥛 @traderibo123 @lamumudotxyz #MilkRush`;
   const text = encodeURIComponent(scoreMsg);
   const url = encodeURIComponent('https://lamumu-milk-rush.vercel.app');
   const hashtags = encodeURIComponent('Lamumu,MilkRush');
