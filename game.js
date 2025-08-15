@@ -110,7 +110,7 @@
     shareBtn.addEventListener('click', function(e){
       var scoreEl = document.getElementById('final-score');
       var score = scoreEl ? (scoreEl.textContent || '0') : '0';
-      var text = `I scored ${score} points in Lamumu Milk Rush! 🐄🥛 @traderibo123 #Lamumu #MilkRush`;
+      var text = `I scored ${score} points in Lamumu Milk Rush! 🐄🥛 @traderibo123 @lamumudotxyz #MilkRush`;
       var url = encodeURIComponent(window.location.href);
       var intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${url}`;
       this.setAttribute('href', intent);
