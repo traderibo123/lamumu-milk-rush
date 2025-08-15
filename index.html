@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lamumu Milk Rush 🐄🥛</title>
+  <meta name="description" content="Catch milk bottles with Lamumu, activate Turbo Milk mode, and set your best score!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <section id="screen-start" class="screen active">
+      <div class="logo-row">
+        <img src="assets/lamumu.png" alt="Lamumu Logo" class="logo-img">
+        <img src="assets/common.png" alt="Common Logo" class="logo-img">
+      </div>
+      <div class="card">
+        <h1 class="logo">Lamumu Milk Rush</h1>
+        <p class="tagline">Catch as many <strong>milk bottles</strong> as you can in 60 seconds! 3 bottles in a row → <strong>Turbo Milk</strong> (10 sec, ×2 points)!</p>
+        <label class="label" for="nick">Nickname</label>
+        <input id="nick" class="input" placeholder="e.g. traderibo123" maxlength="24">
+        <div class="controls">
+          <button id="btn-start" class="btn primary">Start Game</button>
+          <button id="btn-how" class="btn outline">How to Play</button>
+        </div>
+      </div>
+      <footer class="footer">creator by @traderibo123</footer>
+    </section>
+
+    <section id="screen-how" class="screen">
+      <div class="card">
+        <h2>How to Play</h2>
+        <ul class="how">
+          <li><strong>Move:</strong> Arrow keys / A-D / swipe</li>
+          <li><strong>Collect:</strong> 🥛 Milk (+10), 🌾 Hay (+5), 🪙 Gold (+20)</li>
+          <li><strong>Avoid:</strong> 🪣 Empty Bucket (−10), 💩 Mud (−15 & slows you)</li>
+          <li><strong>Combo:</strong> 3 milks in a row → <em>Turbo Milk</em> (10 sec, ×2 points)</li>
+        </ul>
+        <div class="controls"><button id="btn-back" class="btn">Back</button></div>
+      </div>
+    </section>
+
+    <section id="screen-game" class="screen">
+      <header class="hud">
+        <div class="hud-item"><span>Time</span><strong id="time">60</strong></div>
+        <div class="hud-item"><span>Score</span><strong id="score">0</strong></div>
+        <div class="hud-item"><span>Best</span><strong id="best">0</strong></div>
+        <div class="hud-item"><span>Status</span><strong id="state">—</strong></div>
+      </header>
+
+      <div id="stage-wrap">
+        <canvas id="stage" width="900" height="540" aria-label="Game stage"></canvas>
+        <div id="player-ui">
+          <img id="lamumu-face" src="assets/lamumu.png" alt="Lamumu">
+          <div id="turbo">TURBO MILK ×2</div>
+        </div>
+      </div>
+
+      <div class="controls game-controls">
+        <button id="btn-left" class="btn">◀</button>
+        <button id="btn-pause" class="btn">Pause</button>
+        <button id="btn-right" class="btn">▶</button>
+      </div>
+    </section>
+
+    <section id="screen-over" class="screen">
+  <div class="card end-centered">
+    <h2>Game Over!</h2>
+    <p><strong>Your Score:</strong> <span id="final-score">0</span></p>
+    <p><strong>Best Score:</strong> <span id="final-best">0</span></p>
+
+    <div class="end-mascot">
+      <img src="assets/lamumu_full.png" alt="Lamumu Mascot" class="mascot-img">
+      <p class="end-text">Moo-velous job, Farmer! See you in the next rush!</p>
+      <a id="btn-share-over" class="btn outline share-btn" target="_blank" rel="noopener">Share on X</a>
+    </div>
+
+    <div class="controls">
+      <button id="btn-again" class="btn primary">Play Again</button>
+    </div>
+
+    <div class="logo-row">
+      <img src="assets/lamumu.png" alt="Lamumu Logo" class="logo-img">
+      <img src="assets/common.png" alt="Common Logo" class="logo-img">
+    </div>
+  </div>
+</section>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
